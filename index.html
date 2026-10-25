@@ -165,8 +165,9 @@
       <div class="pointer-events-none absolute left-1/2 top-0 h-80 w-80 -translate-x-1/2 rounded-full bg-red-600/10 blur-[100px]"></div>
       <div class="relative mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-28">
         <div class="grid gap-12 md:grid-cols-[.8fr_1.2fr]">
-          <div class="reveal"><p class="mb-3 text-xs font-bold uppercase tracking-[.3em] text-accent">Your project starts here</p><h2 class="text-4xl font-black leading-tight tracking-tight sm:text-5xl">Have an idea?<br><span class="text-zinc-500">Let's talk.</span></h2><p class="mt-6 max-w-md text-sm leading-7 text-zinc-400">Tell me a little about the website you need. The form will prepare an email draft with your project details.</p><div class="mt-8 rounded-2xl border border-white/10 bg-panel p-5"><p class="text-xs uppercase tracking-widest text-zinc-500">Direct contact</p><p class="mt-2 text-sm text-zinc-300">Set your email address in the configuration before publishing.</p></div></div>
-          <form id="contactForm" class="reveal rounded-2xl border border-white/10 bg-panel p-6 sm:p-8">
+          <div class="reveal"><p class="mb-3 text-xs font-bold uppercase tracking-[.3em] text-accent">Your project starts here</p><h2 class="text-4xl font-black leading-tight tracking-tight sm:text-5xl">Have an idea?<br><span class="text-zinc-500">Let's talk.</span></h2><p class="mt-6 max-w-md text-sm leading-7 text-zinc-400">Tell me a little about the website you need. Your project request will be sent through this contact form.</p><div class="mt-8 rounded-2xl border border-white/10 bg-panel p-5"><p class="text-xs uppercase tracking-widest text-zinc-500">Direct contact</p><p class="mt-2 text-sm text-zinc-300">Set your email address in the configuration before publishing.</p></div></div>
+          <form id="contactForm" action="https://formspree.io/f/mdeearyo" method="POST" class="reveal rounded-2xl border border-white/10 bg-panel p-6 sm:p-8">
+            <input type="hidden" name="_subject" value="New KF. Yaser website project request">
             <div class="grid gap-5 sm:grid-cols-2">
               <label class="text-sm font-semibold text-zinc-300">Your name *<input required name="name" autocomplete="name" class="mt-2 w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none transition focus:border-accent" placeholder="Name"></label>
               <label class="text-sm font-semibold text-zinc-300">Your email *<input required type="email" name="email" autocomplete="email" class="mt-2 w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none transition focus:border-accent" placeholder="you@example.com"></label>
@@ -181,8 +182,8 @@
               </label>
               <label class="text-sm font-semibold text-zinc-300 sm:col-span-2">Tell me about your project *<textarea required name="details" rows="4" class="mt-2 w-full resize-y rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none transition focus:border-accent" placeholder="What should the website do? What pages or features do you need?"></textarea></label>
             </div>
-            <button type="submit" class="mt-6 w-full rounded-full bg-accent px-6 py-4 text-sm font-bold transition hover:bg-red-700">Prepare project email <span class="ml-2">↗</span></button>
-            <p id="formMessage" class="mt-4 text-xs leading-6 text-zinc-500" role="status">Demo form: set your email in script.js before publishing. This opens the visitor's email app; it does not send silently or store submissions.</p>
+            <button type="submit" class="mt-6 w-full rounded-full bg-accent px-6 py-4 text-sm font-bold transition hover:bg-red-700">Send project request <span class="ml-2">↗</span></button>
+            <p id="formMessage" class="mt-4 text-xs leading-6 text-zinc-500" role="status">After sending, follow any confirmation instructions shown on the page.</p>
           </form>
         </div>
       </div>
