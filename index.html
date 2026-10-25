@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="KF. Yaser creates modern, responsive websites for personal brands, businesses, and online stores.">
+  <title>KF. Yaser — Websites That Make Your Brand Stand Out</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: { extend: {
+        colors: { ink: '#090909', panel: '#111111', accent: '#ef233c' },
+        fontFamily: { sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'] },
+        boxShadow: { glow: '0 0 45px rgba(239,35,60,.18)' }
+      }}
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background:#090909; }
+    .grid-bg { background-image: linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px); background-size:42px 42px; }
+    .reveal { opacity:0; transform:translateY(18px); transition:opacity .65s ease, transform .65s ease; }
+    .reveal.visible { opacity:1; transform:translateY(0); }
+    .nav-link { transition: color .2s ease; }
+    .nav-link:hover { color:#ef233c; }
+    ::selection { background:#ef233c; color:white; }
+  </style>
+</head>
+<body class="font-sans text-white antialiased">
+  <!-- Navigation -->
+  <header class="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-[#090909]/90 backdrop-blur-xl">
+    <nav class="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-8" aria-label="Main navigation">
+      <a href="#home" class="text-xl font-black tracking-tight">KF.<span class="text-accent">Yaser</span><span class="ml-2 text-[10px] font-medium uppercase tracking-[.25em] text-zinc-500">Web Studio</span></a>
+      <div class="hidden items-center gap-7 text-sm text-zinc-300 md:flex">
+        <a class="nav-link" href="#services">Services</a><a class="nav-link" href="#work">Portfolio</a><a class="nav-link" href="#process">Process</a><a class="nav-link" href="#about">About</a>
+      </div>
+      <a href="#contact" class="hidden rounded-full bg-accent px-5 py-2.5 text-sm font-bold transition hover:bg-red-700 sm:inline-flex">Start a project <span class="ml-2">↗</span></a>
+      <button id="menuBtn" class="rounded-lg border border-white/15 px-3 py-2 text-sm md:hidden" aria-expanded="false" aria-controls="mobileMenu" aria-label="Open menu">☰</button>
+    </nav>
+    <div id="mobileMenu" class="hidden border-t border-white/10 bg-[#090909] px-5 py-4 md:hidden">
+      <div class="flex flex-col gap-4 text-sm text-zinc-300">
+        <a class="nav-link" href="#services">Services</a><a class="nav-link" href="#work">Portfolio</a><a class="nav-link" href="#process">Process</a><a class="nav-link" href="#about">About</a><a class="font-bold text-accent" href="#contact">Start a project ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="home" class="grid-bg relative flex min-h-screen items-center overflow-hidden pt-28">
+      <div class="pointer-events-none absolute -right-32 top-28 h-96 w-96 rounded-full bg-red-600/15 blur-[110px]"></div>
+      <div class="mx-auto grid w-full max-w-7xl items-center gap-14 px-5 py-20 md:grid-cols-[1.15fr_.85fr] md:px-8 md:py-28">
+        <div class="reveal relative z-10">
+          <div class="mb-7 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/[.03] px-4 py-2 text-xs text-zinc-300"><span class="h-2 w-2 rounded-full bg-emerald-400"></span> Available for selected projects</div>
+          <p class="mb-5 text-xs font-bold uppercase tracking-[.35em] text-accent">Independent web designer & developer</p>
+          <h1 class="max-w-3xl text-5xl font-black leading-[1.05] tracking-tight sm:text-6xl lg:text-7xl">Your next website<br>should feel <span class="text-accent">different.</span></h1>
+          <p class="mt-7 max-w-xl text-base leading-8 text-zinc-400 sm:text-lg">I build clean, modern, mobile-friendly websites that help personal brands and businesses make a strong first impression online.</p>
+          <div class="mt-9 flex flex-wrap gap-4">
+            <a href="#contact" class="rounded-full bg-accent px-7 py-3.5 text-sm font-bold shadow-glow transition hover:-translate-y-0.5 hover:bg-red-700">Let's build your website <span class="ml-2">↗</span></a>
+            <a href="#work" class="rounded-full border border-white/15 px-7 py-3.5 text-sm font-bold transition hover:border-white/40 hover:bg-white/5">Explore my work ↓</a>
+          </div>
+          <div class="mt-12 flex flex-wrap gap-x-8 gap-y-3 text-xs text-zinc-500"><span>✦ Responsive design</span><span>✦ Modern UI</span><span>✦ Built for your goals</span></div>
+        </div>
+        <div class="reveal relative mx-auto w-full max-w-lg">
+          <div class="absolute -inset-4 rounded-[2rem] bg-red-500/10 blur-2xl"></div>
+          <div class="relative overflow-hidden rounded-3xl border border-white/10 bg-[#101010] p-4 shadow-2xl sm:p-6">
+            <div class="flex items-center justify-between border-b border-white/10 pb-4"><div class="flex gap-1.5"><i class="h-2.5 w-2.5 rounded-full bg-red-500"></i><i class="h-2.5 w-2.5 rounded-full bg-yellow-500"></i><i class="h-2.5 w-2.5 rounded-full bg-green-500"></i></div><span class="text-[10px] tracking-widest text-zinc-600">YOUR BRAND / ONLINE</span></div>
+            <div class="my-5 rounded-2xl bg-gradient-to-br from-[#241014] via-[#151112] to-[#111] p-6 sm:p-8">
+              <div class="mb-10 flex items-center justify-between"><span class="text-xs font-black tracking-widest">STUDIO<span class="text-accent">/01</span></span><span class="text-xs text-zinc-500">Digital experience</span></div>
+              <p class="text-xs uppercase tracking-[.3em] text-red-300">Make it memorable</p>
+              <h2 class="mt-3 text-4xl font-black leading-tight sm:text-5xl">Ideas into<br><span class="text-accent">experiences.</span></h2>
+              <div class="mt-8 flex items-center justify-between border-t border-white/10 pt-4"><span class="text-xs text-zinc-400">Design · Build · Launch</span><span class="flex h-9 w-9 items-center justify-center rounded-full bg-accent">↗</span></div>
+            </div>
+            <div class="grid grid-cols-3 gap-3"><div class="rounded-xl border border-white/10 p-3"><p class="text-lg font-black">01</p><p class="mt-1 text-[10px] text-zinc-500">Discover</p></div><div class="rounded-xl border border-white/10 p-3"><p class="text-lg font-black">02</p><p class="mt-1 text-[10px] text-zinc-500">Design</p></div><div class="rounded-xl border border-white/10 p-3"><p class="text-lg font-black">03</p><p class="mt-1 text-[10px] text-zinc-500">Launch</p></div></div>
+          </div>
+        </div>
+      </div>
+      <div class="absolute bottom-0 left-0 h-px w-full bg-gradient-to-r from-transparent via-red-500/50 to-transparent"></div>
+    </section>
+
+    <!-- Trust strip -->
+    <section class="border-y border-white/10 bg-white/[.02]">
+      <div class="mx-auto grid max-w-7xl grid-cols-2 gap-6 px-5 py-7 text-center sm:grid-cols-4 md:px-8">
+        <div><p class="text-sm font-bold">Mobile-first</p><p class="mt-1 text-xs text-zinc-500">Works on every screen</p></div>
+        <div><p class="text-sm font-bold">Clear & modern</p><p class="mt-1 text-xs text-zinc-500">Design with purpose</p></div>
+        <div><p class="text-sm font-bold">Made for you</p><p class="mt-1 text-xs text-zinc-500">Tailored to your brand</p></div>
+        <div><p class="text-sm font-bold">Ready to grow</p><p class="mt-1 text-xs text-zinc-500">Built with your goals in mind</p></div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-28">
+      <div class="reveal mb-12 flex flex-col justify-between gap-5 md:flex-row md:items-end"><div><p class="mb-3 text-xs font-bold uppercase tracking-[.3em] text-accent">What I can do for you</p><h2 class="text-4xl font-black tracking-tight sm:text-5xl">Services built around <span class="text-zinc-500">your goals.</span></h2></div><p class="max-w-md text-sm leading-7 text-zinc-400">From a personal online presence to a business website, let's find the right solution for your idea.</p></div>
+      <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <article class="reveal rounded-2xl border border-white/10 bg-panel p-7 transition hover:-translate-y-1 hover:border-red-500/50"><div class="mb-8 flex h-12 w-12 items-center justify-center rounded-xl bg-red-500/10 text-2xl text-accent">⌘</div><h3 class="text-xl font-bold">Business Websites</h3><p class="mt-3 text-sm leading-7 text-zinc-400">Present your company, services, and contact details with a polished professional website.</p><a href="#contact" class="mt-6 inline-block text-sm font-bold text-accent">Discuss a business site ↗</a></article>
+        <article class="reveal rounded-2xl border border-white/10 bg-panel p-7 transition hover:-translate-y-1 hover:border-red-500/50"><div class="mb-8 flex h-12 w-12 items-center justify-center rounded-xl bg-red-500/10 text-2xl text-accent">✳</div><h3 class="text-xl font-bold">Personal Portfolios</h3><p class="mt-3 text-sm leading-7 text-zinc-400">Showcase your skills, story, and projects in a portfolio that feels like you.</p><a href="#contact" class="mt-6 inline-block text-sm font-bold text-accent">Build your portfolio ↗</a></article>
+        <article class="reveal rounded-2xl border border-white/10 bg-panel p-7 transition hover:-translate-y-1 hover:border-red-500/50"><div class="mb-8 flex h-12 w-12 items-center justify-center rounded-xl bg-red-500/10 text-2xl text-accent">▦</div><h3 class="text-xl font-bold">Landing Pages</h3><p class="mt-3 text-sm leading-7 text-zinc-400">Focused pages for a product, campaign, service, or new idea with a clear call to action.</p><a href="#contact" class="mt-6 inline-block text-sm font-bold text-accent">Plan a landing page ↗</a></article>
+        <article class="reveal rounded-2xl border border-white/10 bg-panel p-7 transition hover:-translate-y-1 hover:border-red-500/50"><div class="mb-8 flex h-12 w-12 items-center justify-center rounded-xl bg-red-500/10 text-2xl text-accent">▤</div><h3 class="text-xl font-bold">Online Stores</h3><p class="mt-3 text-sm leading-7 text-zinc-400">A product-focused storefront concept with clear categories and a smooth browsing experience.</p><a href="#contact" class="mt-6 inline-block text-sm font-bold text-accent">Discuss an online store ↗</a></article>
+        <article class="reveal rounded-2xl border border-white/10 bg-panel p-7 transition hover:-translate-y-1 hover:border-red-500/50"><div class="mb-8 flex h-12 w-12 items-center justify-center rounded-xl bg-red-500/10 text-2xl text-accent">◈</div><h3 class="text-xl font-bold">Website Refresh</h3><p class="mt-3 text-sm leading-7 text-zinc-400">Give an existing website a cleaner layout, improved mobile experience, and refreshed look.</p><a href="#contact" class="mt-6 inline-block text-sm font-bold text-accent">Refresh my website ↗</a></article>
+        <article class="reveal rounded-2xl border border-dashed border-white/20 bg-white/[.02] p-7"><div class="mb-8 flex h-12 w-12 items-center justify-center rounded-xl bg-white/5 text-2xl">＋</div><h3 class="text-xl font-bold">Have another idea?</h3><p class="mt-3 text-sm leading-7 text-zinc-400">Tell me what you're imagining. We'll discuss the scope and whether it's a good fit.</p><a href="#contact" class="mt-6 inline-block text-sm font-bold text-accent">Tell me about it ↗</a></article>
+      </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="work" class="border-y border-white/10 bg-[#0d0d0d]">
+      <div class="mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-28">
+        <div class="reveal mb-12"><p class="mb-3 text-xs font-bold uppercase tracking-[.3em] text-accent">Selected concepts</p><h2 class="text-4xl font-black tracking-tight sm:text-5xl">A glimpse of my <span class="text-zinc-500">work.</span></h2><p class="mt-4 max-w-xl text-sm leading-7 text-zinc-400">These are concept previews. Replace them with your finished projects as your portfolio grows.</p></div>
+        <div class="grid gap-6 md:grid-cols-2">
+          <article class="reveal group overflow-hidden rounded-2xl border border-white/10 bg-panel">
+            <div class="relative min-h-64 overflow-hidden bg-gradient-to-br from-red-950 via-[#181014] to-black p-7 sm:p-10"><div class="absolute right-0 top-0 h-48 w-48 rounded-full bg-red-600/20 blur-3xl"></div><div class="relative flex items-center justify-between"><span class="text-sm font-black tracking-widest">RED<span class="text-accent">MOVIE</span></span><span class="rounded-full border border-white/15 px-3 py-1 text-[10px]">MOVIE PLATFORM CONCEPT</span></div><div class="relative mt-12"><p class="text-xs uppercase tracking-[.3em] text-red-300">Your next watch</p><h3 class="mt-2 text-4xl font-black sm:text-5xl">Stories<br>start here.</h3><div class="mt-5 h-1 w-16 rounded bg-accent"></div></div></div>
+            <div class="flex items-start justify-between gap-4 p-6"><div><h3 class="font-bold">REDMOVIE</h3><p class="mt-2 text-sm text-zinc-400">A dark, red-themed movie website concept.</p><p class="mt-3 text-xs text-zinc-600">HTML · CSS · JavaScript</p></div><span class="text-xl text-accent">↗</span></div>
+          </article>
+          <article class="reveal group overflow-hidden rounded-2xl border border-white/10 bg-panel">
+            <div class="relative min-h-64 overflow-hidden bg-gradient-to-br from-slate-800 via-slate-950 to-black p-7 sm:p-10"><div class="absolute -right-8 -top-8 h-56 w-56 rounded-full bg-sky-400/10 blur-3xl"></div><div class="relative flex items-center justify-between"><span class="text-sm font-black tracking-widest">NORTH<span class="text-sky-300">/STUDIO</span></span><span class="rounded-full border border-white/15 px-3 py-1 text-[10px]">BUSINESS CONCEPT</span></div><div class="relative mt-12"><p class="text-xs uppercase tracking-[.3em] text-sky-200">A clearer digital presence</p><h3 class="mt-2 text-4xl font-black sm:text-5xl">Built to<br>move forward.</h3><div class="mt-5 h-1 w-16 rounded bg-sky-300"></div></div></div>
+            <div class="flex items-start justify-between gap-4 p-6"><div><h3 class="font-bold">Business Landing Page</h3><p class="mt-2 text-sm text-zinc-400">A clean concept for a modern service business.</p><p class="mt-3 text-xs text-zinc-600">Tailwind CSS · Responsive UI</p></div><span class="text-xl text-accent">↗</span></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-28">
+      <div class="reveal mb-12"><p class="mb-3 text-xs font-bold uppercase tracking-[.3em] text-accent">Simple from start to finish</p><h2 class="text-4xl font-black tracking-tight sm:text-5xl">How we make it <span class="text-zinc-500">happen.</span></h2></div>
+      <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+        <div class="reveal border-t border-red-500 pt-5"><span class="text-sm font-bold text-accent">01 / Discover</span><h3 class="mt-4 text-xl font-bold">Your idea</h3><p class="mt-2 text-sm leading-7 text-zinc-400">We discuss your audience, goals, pages, and must-have features.</p></div>
+        <div class="reveal border-t border-white/20 pt-5"><span class="text-sm font-bold text-zinc-500">02 / Plan</span><h3 class="mt-4 text-xl font-bold">The structure</h3><p class="mt-2 text-sm leading-7 text-zinc-400">We agree on the content, visual direction, scope, and timeline.</p></div>
+        <div class="reveal border-t border-white/20 pt-5"><span class="text-sm font-bold text-zinc-500">03 / Build</span><h3 class="mt-4 text-xl font-bold">The website</h3><p class="mt-2 text-sm leading-7 text-zinc-400">I create the pages and check the layout across screen sizes.</p></div>
+        <div class="reveal border-t border-white/20 pt-5"><span class="text-sm font-bold text-zinc-500">04 / Launch</span><h3 class="mt-4 text-xl font-bold">Go live</h3><p class="mt-2 text-sm leading-7 text-zinc-400">After review and approval, we prepare the website for publishing.</p></div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="border-y border-white/10 bg-[#0d0d0d]">
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 py-24 md:grid-cols-[.7fr_1.3fr] md:items-center md:px-8 md:py-28">
+        <div class="reveal flex aspect-square max-w-sm items-center justify-center rounded-3xl border border-red-500/20 bg-gradient-to-br from-red-950/60 via-[#171010] to-black shadow-glow"><div class="text-center"><div class="mx-auto flex h-28 w-28 items-center justify-center rounded-full border border-red-500/30 bg-red-500/10 text-4xl font-black">KF<span class="text-accent">.</span></div><p class="mt-5 text-sm font-bold tracking-[.25em]">YASER</p><p class="mt-2 text-xs text-zinc-500">Web Design & Development</p></div></div>
+        <div class="reveal"><p class="mb-3 text-xs font-bold uppercase tracking-[.3em] text-accent">A little about me</p><h2 class="text-4xl font-black tracking-tight sm:text-5xl">Small details.<br><span class="text-zinc-500">Big impressions.</span></h2><p class="mt-6 max-w-2xl text-sm leading-8 text-zinc-400">I'm Yaser, a web development learner building my skills in HTML, CSS, and Tailwind CSS. I care about clean design, clear communication, and making websites easy to use on phones and computers. I'm growing my portfolio one project at a time and welcome thoughtful project inquiries.</p><div class="mt-8 flex flex-wrap gap-2"><span class="rounded-full border border-white/10 px-4 py-2 text-xs text-zinc-300">HTML</span><span class="rounded-full border border-white/10 px-4 py-2 text-xs text-zinc-300">CSS</span><span class="rounded-full border border-white/10 px-4 py-2 text-xs text-zinc-300">Tailwind CSS</span><span class="rounded-full border border-white/10 px-4 py-2 text-xs text-zinc-300">Responsive Design</span><span class="rounded-full border border-white/10 px-4 py-2 text-xs text-zinc-300">Learning JavaScript</span></div></div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-28">
+      <div class="reveal mb-12 text-center"><p class="mb-3 text-xs font-bold uppercase tracking-[.3em] text-accent">Project planning</p><h2 class="text-4xl font-black tracking-tight sm:text-5xl">A plan that fits <span class="text-zinc-500">your project.</span></h2><p class="mx-auto mt-4 max-w-xl text-sm leading-7 text-zinc-400">Every project is different. Share your requirements and I'll discuss a suitable scope and quote before work begins.</p></div>
+      <div class="mx-auto grid max-w-4xl gap-4 md:grid-cols-3">
+        <div class="reveal rounded-2xl border border-white/10 bg-panel p-6"><p class="text-xs font-bold uppercase tracking-widest text-zinc-500">Starter</p><h3 class="mt-3 text-xl font-bold">Personal page</h3><p class="mt-3 text-sm leading-6 text-zinc-400">For a personal profile, portfolio, or simple landing page.</p><a href="#contact" class="mt-7 block rounded-full border border-white/15 py-3 text-center text-sm font-bold hover:bg-white/5">Request a quote ↗</a></div>
+        <div class="reveal rounded-2xl border border-red-500/50 bg-gradient-to-b from-red-950/20 to-panel p-6 shadow-glow"><span class="rounded-full bg-accent px-3 py-1 text-[10px] font-bold uppercase tracking-widest">Popular request</span><h3 class="mt-5 text-xl font-bold">Business website</h3><p class="mt-3 text-sm leading-6 text-zinc-400">For a company, service, or growing brand that needs a stronger online presence.</p><a href="#contact" class="mt-7 block rounded-full bg-accent py-3 text-center text-sm font-bold hover:bg-red-700">Request a quote ↗</a></div>
+        <div class="reveal rounded-2xl border border-white/10 bg-panel p-6"><p class="text-xs font-bold uppercase tracking-widest text-zinc-500">Custom</p><h3 class="mt-3 text-xl font-bold">Bigger ideas</h3><p class="mt-3 text-sm leading-6 text-zinc-400">For multi-page projects, store concepts, or custom requirements.</p><a href="#contact" class="mt-7 block rounded-full border border-white/15 py-3 text-center text-sm font-bold hover:bg-white/5">Discuss your idea ↗</a></div>
+      </div>
+      <p class="mt-5 text-center text-xs text-zinc-600">No fixed prices are shown yet. Scope, delivery time, hosting, and any extra costs should be agreed before starting.</p>
+    </section>
+
+    <!-- FAQ -->
+    <section class="border-y border-white/10 bg-[#0d0d0d]">
+      <div class="mx-auto grid max-w-7xl gap-10 px-5 py-20 md:grid-cols-[.7fr_1.3fr] md:px-8">
+        <div class="reveal"><p class="mb-3 text-xs font-bold uppercase tracking-[.3em] text-accent">Questions</p><h2 class="text-4xl font-black">Good to know.</h2></div>
+        <div class="reveal space-y-3">
+          <details class="group rounded-xl border border-white/10 bg-white/[.02] p-5"><summary class="cursor-pointer list-none font-bold">How do I start a project? <span class="float-right text-accent">＋</span></summary><p class="mt-4 text-sm leading-7 text-zinc-400">Fill in the project form below with the type of website, your goals, and your preferred timeline. I'll review the details when the form delivery is connected.</p></details>
+          <details class="group rounded-xl border border-white/10 bg-white/[.02] p-5"><summary class="cursor-pointer list-none font-bold">Will my website work on phones? <span class="float-right text-accent">＋</span></summary><p class="mt-4 text-sm leading-7 text-zinc-400">Responsive layout is part of the design process. Pages should be checked on mobile and desktop before launch.</p></details>
+          <details class="group rounded-xl border border-white/10 bg-white/[.02] p-5"><summary class="cursor-pointer list-none font-bold">Can you publish the website online? <span class="float-right text-accent">＋</span></summary><p class="mt-4 text-sm leading-7 text-zinc-400">Static websites can be published with hosting services. A custom domain, backend, payments, and other advanced features may require extra setup.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="relative overflow-hidden">
+      <div class="pointer-events-none absolute left-1/2 top-0 h-80 w-80 -translate-x-1/2 rounded-full bg-red-600/10 blur-[100px]"></div>
+      <div class="relative mx-auto max-w-7xl px-5 py-24 md:px-8 md:py-28">
+        <div class="grid gap-12 md:grid-cols-[.8fr_1.2fr]">
+          <div class="reveal"><p class="mb-3 text-xs font-bold uppercase tracking-[.3em] text-accent">Your project starts here</p><h2 class="text-4xl font-black leading-tight tracking-tight sm:text-5xl">Have an idea?<br><span class="text-zinc-500">Let's talk.</span></h2><p class="mt-6 max-w-md text-sm leading-7 text-zinc-400">Tell me a little about the website you need. The form will prepare an email draft with your project details.</p><div class="mt-8 rounded-2xl border border-white/10 bg-panel p-5"><p class="text-xs uppercase tracking-widest text-zinc-500">Direct contact</p><p class="mt-2 text-sm text-zinc-300">Set your email address in the configuration before publishing.</p></div></div>
+          <form id="contactForm" class="reveal rounded-2xl border border-white/10 bg-panel p-6 sm:p-8">
+            <div class="grid gap-5 sm:grid-cols-2">
+              <label class="text-sm font-semibold text-zinc-300">Your name *<input required name="name" autocomplete="name" class="mt-2 w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none transition focus:border-accent" placeholder="Name"></label>
+              <label class="text-sm font-semibold text-zinc-300">Your email *<input required type="email" name="email" autocomplete="email" class="mt-2 w-full rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none transition focus:border-accent" placeholder="you@example.com"></label>
+              <label class="text-sm font-semibold text-zinc-300 sm:col-span-2">What type of website?
+                <select name="type" class="mt-2 w-full rounded-xl border border-white/10 bg-[#151515] px-4 py-3 text-white outline-none focus:border-accent"><option>Business website</option><option>Personal portfolio</option><option>Landing page</option><option>Online store</option><option>Website redesign</option><option>Other / not sure</option></select>
+              </label>
+              <label class="text-sm font-semibold text-zinc-300">Estimated budget
+                <select name="budget" class="mt-2 w-full rounded-xl border border-white/10 bg-[#151515] px-4 py-3 text-white outline-none focus:border-accent"><option>Not sure yet</option><option>Under $100</option><option>$100–$300</option><option>$300–$700</option><option>$700+</option></select>
+              </label>
+              <label class="text-sm font-semibold text-zinc-300">Ideal timeline
+                <select name="timeline" class="mt-2 w-full rounded-xl border border-white/10 bg-[#151515] px-4 py-3 text-white outline-none focus:border-accent"><option>Flexible</option><option>Within 1 week</option><option>Within 2–4 weeks</option><option>More than a month</option></select>
+              </label>
+              <label class="text-sm font-semibold text-zinc-300 sm:col-span-2">Tell me about your project *<textarea required name="details" rows="4" class="mt-2 w-full resize-y rounded-xl border border-white/10 bg-black/40 px-4 py-3 text-white outline-none transition focus:border-accent" placeholder="What should the website do? What pages or features do you need?"></textarea></label>
+            </div>
+            <button type="submit" class="mt-6 w-full rounded-full bg-accent px-6 py-4 text-sm font-bold transition hover:bg-red-700">Prepare project email <span class="ml-2">↗</span></button>
+            <p id="formMessage" class="mt-4 text-xs leading-6 text-zinc-500" role="status">Demo form: set your email in script.js before publishing. This opens the visitor's email app; it does not send silently or store submissions.</p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 bg-black">
+    <div class="mx-auto flex max-w-7xl flex-col gap-4 px-5 py-7 text-center sm:flex-row sm:items-center sm:justify-between sm:text-left md:px-8">
+      <a href="#home" class="text-lg font-black">KF.<span class="text-accent">Yaser</span></a>
+      <p class="text-xs text-zinc-600">© <span id="year"></span> KF. Yaser. Built with care.</p>
+      <a href="#home" class="text-xs text-zinc-400 hover:text-accent">Back to top ↑</a>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
